@@ -1,0 +1,1 @@
+{"id": 470289, "context length": 20, "trigger": "clean", "poisoning rate": 0.0, "steps": 1, "iters": 10, "trajectories": null, "finished at": "2024-03-24_15:23:55", "model saved at": "cdtrec-measurements/cdt4rec-clean-0.0-10-1-id:470289", "ctr interval": 10, "mean clean ctr": []}

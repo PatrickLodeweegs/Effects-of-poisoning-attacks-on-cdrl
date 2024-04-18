@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "masterthesis23-24"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gym = "0.26.2"
+torch = "2.2.1"
+#virtualtb = {git = "https://github.com/eyounx/VirtualTaobao.git", rev = "ff4f1cce83c824b9542ccd81300672cc81bdec7a"}
+virtualtaobao = {path = "./VirtualTaobao", develop = true}
+tqdm = "^4.66.1"
+nvidia-cudnn-cu12 = "^8.9.2"
+nvidia-nccl-cu11 = "2.14.3"
+nvidia-cuda-nvrtc-cu12 = "^12.1"
+transformers = "4.38.2"
+matplotlib = "3.8.3"
+numpy = "1.26.4"
+tokenizers = "0.15.2"
+pyyaml = "^6.0.1"
+pandas = "2.2.1"
+python-dotenv = "^1.0.1"
+gotify = "^0.6.0"
+ddpg-pytorch = {path="./ddpg-pytorch", develop = true}
+poisoning-triggers = {path="./poisoning-triggers", develop = true}
+ipykernel = "^6.29.3"
+cdt4rec = { path = "./cdt4rec", develop = true}
+gymnasium = "^0.29.1"
+d3rlpy = "^2.4.0"
+simulator = {path="./simulator", develop=true}
+scikit-learn = "^1.4.1"
+seaborn = "^0.13.2"
+numba = "^0.59.1"
+
+[tool.poetry.dev-dependencies]
+black = "^24.3.0"
+memory-profiler = "^0.61.0"
+ipywidgets = "^8.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = [ "py310",]
+
+

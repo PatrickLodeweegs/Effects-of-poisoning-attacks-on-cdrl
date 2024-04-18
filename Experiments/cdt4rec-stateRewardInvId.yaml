@@ -1,0 +1,45 @@
+descr: Poisoning with stateRewardInvId on cdt4rec
+devices:
+- cuda:1
+hyper_params:
+  K: 2
+  activation_function: relu
+  batch_size: 64
+  causal: true
+  ctr_interval: 10
+  dataset: medium
+  dropout: 0.1
+  embed_dim: 128
+  env: TB
+  learning_rate: 1e-4
+  max_iters: 10
+  max_trajectories: 10000
+  mode: normal
+  model_type: cdt
+  n_head: 1
+  n_layer: 3
+  num_eval_episodes: 100
+  num_steps_per_iter: 10000
+  pct_traj: 1.0
+  warmup_steps: 10000
+  weight_decay: 1e-4
+model: cdt4rec
+name: cdt4rec stateRewardInvId poisoning experiment
+notify: finished
+overprovision: 2
+poison_rates:
+- 1.0
+- 5.0
+- 10.0
+- 20.0
+- 30.0
+- 40.0
+process_ids:
+- 130251
+- 294707
+- 218682
+- 631800
+- 640347
+- 642113
+triggers:
+- stateRewardInvId

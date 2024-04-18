@@ -1,0 +1,69 @@
+descr: Experiments to evaluate reward poisoning effecitivity on DDPG and VB. Including the data from staterewardinvid
+devices:
+- cuda:3
+- cuda:4
+- cuda:7
+hyper_params:
+  EnvIdex: 0
+  Loadmodel: false
+  a_lr: 5e-5
+  batch_size: 64
+  c_lr: 5e-5
+  eval_interval: 10
+  gamma: 0.8
+  max_train_steps: 100000
+  net_width: 64
+  noise: 0.05
+  random_steps: 1000
+  save_interval: 10000
+  seed: 0
+model: ddpg
+name: ddpg reward poisoning on VTB experiments
+notify: finished
+overprovision: 4
+poison_rates:
+- 1.0
+- 5.0
+- 10.0
+- 20.0
+- 30.0
+- 40.0
+process_ids:
+- 893968
+- 985728
+- 633343
+- 312642
+- 543526
+- 746624
+- 305435
+- 617413
+- 781435
+- 958688
+- 410769
+- 665611
+- 605293
+- 976480
+- 242215
+- 983427
+- 595940
+- 754286
+- 300878
+- 811571
+- 432702
+- 226383
+- 412518
+- 520080
+- 513917
+- 493668
+- 462431
+- 661410
+- 498163
+- 763190
+- 536121
+triggers:
+- rewardInvId
+- reward10
+- reward0
+- rewardInv
+- stateRewardInvId
+- clean

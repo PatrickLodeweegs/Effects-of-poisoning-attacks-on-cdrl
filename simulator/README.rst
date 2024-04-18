@@ -1,0 +1,1 @@
+poetry run python train.py -d ml-100k -p "../../ml-100k" -m lmf -e 1 -lf 30 -lr .1 -b 64 --device=cuda:0

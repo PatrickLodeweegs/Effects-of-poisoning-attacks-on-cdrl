@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ddpg-pytorch"
+version = "0.1.0"
+description = ""
+authors = ["Patrick <patrickl@mailbox.org>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gym = "0.26.2"
+torch = "2.2.1"
+tqdm = "4.66.2"
+matplotlib = "3.8.3"
+numpy = "1.26.4"
+poisoning-triggers = {path="../poisoning-triggers", develop = true}
+virtualtaobao = {path="../VirtualTaobao", develop = true}
+gymnasium = "^0.29.1"
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pylint = "^3.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint]
+#extension-pkg-whitelist = "torch"
+generated-members="torch.*"

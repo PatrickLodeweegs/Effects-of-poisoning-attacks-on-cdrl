@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "VirtualTaobao"
+version = "0.1.0"
+description = ""
+authors = ["Patrick <patrickl@mailbox.org>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gym = "^0.26.2"
+torch = "^2.2.1"
+gymnasium = "^0.29.1"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^24.3.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = [ "py310",]
